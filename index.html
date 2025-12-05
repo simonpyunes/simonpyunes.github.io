@@ -1,39 +1,80 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simón Yunes</title>
     <style>
+        /* Reset básico */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
         body {
-            font-family: sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: #f4f4f4;
-            margin: 0;
-            padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            text-align: center;
+            min-height: 100vh;
+            padding: 20px;
         }
+
         .card {
             background: white;
             padding: 40px;
             border-radius: 16px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            box-shadow: 0 6px 25px rgba(0,0,0,0.1);
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
         }
-        h1 { margin-top: 0; }
-        a {
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        p {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .links a {
             text-decoration: none;
             color: #0070f3;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        .links a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            .card {
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 2rem;
+            }
         }
     </style>
 </head>
 <body>
     <div class="card">
         <h1>Simón Yunes</h1>
-        <p>Bienvenido a mi sitio personal.</p>
-        <p>Página en construcción.</p>
+        <h2>Fitness • Tech • Aprendizaje</h2>
+        <p>Bienvenido a mi sitio personal. Aquí compartiré poco a poco cosas sobre mí, mis proyectos y mis intereses.</p>
+        <div class="links">
+            <a href="mailto:hola@yunes.cc">Correo</a>
+            <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+            <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+        </div>
     </div>
 </body>
 </html>
