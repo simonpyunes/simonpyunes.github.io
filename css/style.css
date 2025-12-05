@@ -1,6 +1,15 @@
 /* Reset básico */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
+.avatar {
+    width: 150px;          /* Ajusta el tamaño que quieras */
+    height: 150px;         /* Igual que el ancho para que sea cuadrada */
+    border-radius: 50%;    /* Hace que sea un círculo */
+    object-fit: cover;     /* Para que la imagen se recorte bien dentro del círculo */
+    display: block;
+    margin: 0 auto 20px;   /* Centra la imagen y agrega espacio abajo */
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: #f0f2f5;
