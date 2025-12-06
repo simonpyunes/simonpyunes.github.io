@@ -124,22 +124,26 @@ h2 {
 
 /* Section buttons */
 .section-button {
-    display: block;
-    background: #161b22;
+    -webkit-appearance: none; /* Elimina estilo nativo en Safari/Chrome */
+    -moz-appearance: none;    /* Para Firefox */
+    appearance: none;          /* Estándar */
+    background: #161b22;      /* Fondo oscuro */
     border: 1px solid #30363d;
     border-radius: 12px;
     padding: 20px;
     margin: 20px 0;
-    text-decoration: none;
-    color: #c9d1d9;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    text-align: left;
+    color: #c9d1d9;           /* Texto claro */
     cursor: pointer;
+    display: block;
+    width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
 }
 
 .section-button:hover {
     transform: translateY(-3px);
     box-shadow: 0 6px 20px rgba(0,0,0,0.5);
-    background: #1f2733;
+    background: #1f2733;      /* Fondo hover oscuro */
 }
 
 .section-button h3 {
